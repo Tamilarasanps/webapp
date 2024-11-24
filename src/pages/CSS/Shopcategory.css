@@ -1,0 +1,119 @@
+/* Base Styles */
+.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
+}
+
+.shopcategory-indexsort {
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopcategory-indexsort p span {
+  font-weight: 600;
+}
+
+.shopcategory-sort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid white;
+}
+
+.shopcategory-product {
+  margin: 10px 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+  gap: 30px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Media Queries */
+
+/* Medium devices (Tablets and smaller screens, max-width 1024px) */
+@media (max-width: 1024px) {
+  .shopcategory-banner {
+    width: 90%; /* Adjust width */
+  }
+
+  .shopcategory-indexsort {
+    margin: 0px 50px; /* Reduce margins */
+    flex-wrap: wrap; /* Allow items to stack if needed */
+    gap: 10px; /* Add space between items */
+  }
+
+  .shopcategory-product {
+    margin: 10px 50px; /* Reduce side margins */
+    grid-template-columns: 1fr 1fr 1fr; /* Reduce to 3 columns */
+    gap: 20px;
+    row-gap: 50px;
+  }
+}
+
+/* Small devices (Mobile screens, max-width 768px) */
+@media (max-width: 768px) {
+  .shopcategory-banner {
+    width: 95%;
+  }
+
+  .shopcategory-indexsort {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the start */
+    margin: 20px; /* Add consistent margin */
+  }
+
+  .shopcategory-product {
+    margin: 10px 20px; /* Further reduce margins */
+    grid-template-columns: 1fr 1fr; /* Reduce to 2 columns */
+    gap: 15px;
+    row-gap: 30px;
+  }
+
+  .shopcategory-loadmore {
+    width: 200px;
+    height: 60px;
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* Extra small devices (Phones, max-width 480px) */
+@media (max-width: 480px) {
+  .shopcategory-banner {
+    width: 100%;
+  }
+
+  .shopcategory-indexsort {
+    flex-direction: column;
+    margin: 10px;
+    gap: 5px; /* Smaller gaps for compact layout */
+  }
+
+  .shopcategory-product {
+    margin: 10px 10px;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px;
+    row-gap: 20px;
+  }
+
+  .shopcategory-loadmore {
+    width: 180px;
+    height: 50px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,121 @@
+.new-collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 180vh;
+}
+.new-collections h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+.new-collections hr {
+  width: 250px;
+  height: 10px;
+  border-radius: 10px;
+  background: #252525;
+}
+.new-collections-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+}
+.new-collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 180vh;
+}
+.new-collections h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+.new-collections hr {
+  width: 250px;
+  height: 10px;
+  border-radius: 10px;
+  background: #252525;
+}
+.new-collections-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .new-collections {
+    height: auto;
+    padding: 20px;
+  }
+  .new-collections h1 {
+    font-size: 40px;
+  }
+  .new-collections hr {
+    width: 200px;
+    height: 8px;
+  }
+  .new-collections-item {
+    gap: 20px;
+  }
+  .collections {
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns for tablets */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-collections {
+    padding: 15px;
+  }
+  .new-collections h1 {
+    font-size: 30px;
+  }
+  .new-collections hr {
+    width: 150px;
+    height: 6px;
+  }
+  .new-collections-item {
+    gap: 15px;
+  }
+  .collections {
+    grid-template-columns: 1fr 1fr; /* Two columns for smaller tablets and large phones */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-collections {
+    padding: 10px;
+  }
+  .new-collections h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .new-collections hr {
+    width: 100px;
+    height: 4px;
+  }
+  .new-collections-item {
+    gap: 10px;
+  }
+  .collections {
+    grid-template-columns: 1fr; /* Single column for small phones */
+    gap: 10px;
+  }
+}

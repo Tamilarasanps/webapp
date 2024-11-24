@@ -1,0 +1,145 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #d3d3d3;
+  padding: 10px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-logo img {
+  height: 30px;
+}
+
+.footer-logo p {
+  color: #383838;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-link {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  color: #252525;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-link li {
+  cursor: pointer;
+}
+
+.footer-social-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon-container {
+  padding: 6px;
+  background: #fbfbff;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  color: #1a1a1a;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-copyright hr {
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  height: 2px;
+  background: #c7c7c7;
+  margin: 5px 0;
+}
+
+/* Media Queries */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .footer-logo img {
+    height: 25px; /* Reduce logo size */
+  }
+
+  .footer-logo p {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .footer-link {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .footer-link li {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .footer-social-icon {
+    gap: 8px; /* Reduce gap between icons */
+  }
+
+  .footer-icon-container {
+    padding: 5px; /* Adjust padding */
+  }
+
+  .footer-copyright hr {
+    width: 80%; /* Adjust width */
+  }
+
+  .footer-copyright {
+    font-size: 12px; /* Adjust font size */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 5px; /* Reduce padding */
+  }
+
+  .footer-logo img {
+    height: 20px; /* Further reduce logo size */
+  }
+
+  .footer-logo p {
+    font-size: 18px; /* Further adjust font size */
+  }
+
+  .footer-link {
+    gap: 8px; /* Further reduce gap */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .footer-social-icon {
+    gap: 5px; /* Further reduce gap */
+  }
+
+  .footer-icon-container {
+    padding: 4px; /* Adjust padding */
+  }
+
+  .footer-copyright {
+    font-size: 10px; /* Reduce font size */
+  }
+
+  .footer-copyright hr {
+    width: 90%; /* Make hr full width */
+  }
+}

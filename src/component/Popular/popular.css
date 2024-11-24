@@ -1,0 +1,92 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: auto; /* Let the height adjust dynamically */
+  margin: 50px 0; /* Add margin to separate from other sections */
+  position: relative; /* Ensures it stacks properly without overlap */
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 250px;
+  height: 10px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* Wrap items to prevent overflow */
+  justify-content: center; /* Center items on all screens */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .popular {
+    padding: 20px; /* Add padding to ensure text has space */
+    margin: 40px 0; /* Ensure spacing from adjacent sections */
+  }
+
+  .popular h1 {
+    font-size: 40px;
+  }
+
+  .popular hr {
+    width: 200px;
+    height: 8px;
+  }
+
+  .popular-item {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular {
+    margin: 30px 0; /* Reduce spacing for mid-sized devices */
+  }
+
+  .popular h1 {
+    font-size: 32px;
+  }
+
+  .popular hr {
+    width: 150px;
+    height: 6px;
+  }
+
+  .popular-item {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular {
+    padding: 15px; /* Add padding for mobile devices */
+    margin: 20px 0; /* Avoid text touching other sections */
+  }
+
+  .popular h1 {
+    font-size: 28px;
+  }
+
+  .popular hr {
+    width: 120px;
+    height: 5px;
+  }
+
+  .popular-item {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px;
+    margin-top: 20px;
+  }
+}

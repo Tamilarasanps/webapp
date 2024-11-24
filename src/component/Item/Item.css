@@ -1,0 +1,65 @@
+.item {
+  width: 250px;
+  /* height: 100px; */
+}
+.item p {
+  margin: 6px 0px;
+}
+.item-price {
+  display: flex;
+  gap: 20px;
+}
+.item-price-new {
+  color: #374151;
+  font-size: 18px;
+  font-weight: 500;
+}
+.item-price-old {
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.item:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+@media (max-width: 768px) {
+  .item {
+    width: 100%; /* Set the width to take up the full width of its container */
+    margin: 0 auto; /* Center the item */
+  }
+
+  .item-price {
+    flex-direction: column; /* Stack the prices vertically on smaller screens */
+    gap: 10px; /* Reduce the gap between the prices */
+  }
+
+  .item-price-new,
+  .item-price-old {
+    font-size: 16px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  .item p {
+    margin: 4px 0px; /* Reduce the margin for compactness */
+  }
+
+  .item:hover {
+    transform: none; /* Disable scaling effect on hover for touch devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 90%; /* Slightly reduce the width for very small devices */
+  }
+
+  .item-price-new,
+  .item-price-old {
+    font-size: 14px; /* Further adjust the font size for very small screens */
+  }
+
+  .item p {
+    margin: 2px 0px; /* Tighten the spacing further */
+  }
+}
