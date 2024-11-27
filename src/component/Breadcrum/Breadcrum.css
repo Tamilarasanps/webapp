@@ -1,4 +1,4 @@
-.breadcrum{
+.breadcrum {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -7,4 +7,24 @@
     font-weight: 600;
     margin: 20px 60px;
     text-transform: capitalize;
-}
+  }
+  
+  /* Media Query for Tablets (Screen Width ≤ 768px) */
+  @media (max-width: 768px) {
+    .breadcrum {
+      font-size: 14px; /* Reduce font size for smaller screens */
+      margin: 15px 30px; /* Adjust margins */
+      gap: 4px; /* Decrease gap between breadcrumb items */
+    }
+  }
+  
+  /* Media Query for Mobile Phones (Screen Width ≤ 480px) */
+  @media (max-width: 480px) {
+    .breadcrum {
+      font-size: 12px; /* Further reduce font size */
+      margin: 10px 15px; /* Compact margins */
+      flex-wrap: wrap; /* Allow wrapping of breadcrumb items */
+      gap: 3px; /* Minimize gap for smaller space */
+    }
+  }
+  

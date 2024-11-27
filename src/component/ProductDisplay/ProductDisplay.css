@@ -32,7 +32,6 @@
 .productdisplay-right-stars {
   display: flex;
   align-items: center;
-  margin-top: -35px;
   gap: 5px;
   color: #1c1c1c;
   font-size: 16px;
@@ -199,7 +198,7 @@
   }
 
   .productdisplay-right-butn {
-    width: 150px; /* Adjust button width */
+    width: 200px; /* Adjust button width */
     font-size: 14px; /* Smaller button text */
   }
 }
@@ -249,12 +248,12 @@
   }
 
   .productdisplay-right-sizes {
-    flex-direction: column; /* Stack size options vertically */
+    flex-direction: row; /* Stack size options vertically */
     gap: 8px;
   }
 
   .productdisplay-right-butn {
-    width: 120px; /* Smaller button */
+    width: 180px; /* Smaller button */
     font-size: 12px; /* Reduce text size */
   }
 }
