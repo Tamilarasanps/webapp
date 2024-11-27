@@ -55,19 +55,21 @@ const Navbar = () => {
         {/* Add Login Button in the Menu for Mobile */}
         <li className="menu-login-btn">
           <Link to="/login" style={{ textDecoration: "none" }}>
-            <button>Login</button>
+            <button className="btn">Login</button>
           </Link>
         </li>
-      </ul>
 
-      {/* Cart Icon and Count for Desktop */}
-      <div className="nav-login-cart">
+        <li className="nav-login-cart">
         <Link to="/cart">
           <img src={cart_icon} alt="Cart" />
         </Link>
         {/* Dynamically update cart count */}
         <div className="nav-cart-count">{gettotalcartitem()}</div>
-      </div>
+      </li>
+      </ul>
+
+      {/* Cart Icon and Count for Desktop */}
+      
     </div>
   );
 };
