@@ -57,6 +57,7 @@
   padding-top: 50px;
   margin-top: -400px;
   margin-right: 18%;
+  /* width: 200px; */
 }
 .offer {
   width: 35%;
@@ -110,15 +111,6 @@
   cursor: pointer;
 }
 
-.offer-right {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 50px;
-  margin-top: 0; /* Remove negative margin for better positioning */
-  margin-right: 18%;
-}
 
 /* Media Queries */
 @media (max-width: 1024px) {
