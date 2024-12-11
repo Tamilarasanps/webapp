@@ -10,6 +10,8 @@ import Footer from "./component/Footer/Footer.jsx";
 import men_banner from "./component/Assests/banner_mens.png";
 import women_banner from "./component/Assests/banner_women.png";
 import kids_banner from "./component/Assests/banner_kids.png";
+import AdminPage from "./pages/AdminPage.jsx";
+import Signup from "./pages/Signup.jsx";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
+          <Route path="Admin-page" element ={<AdminPage/>} />
           <Route
             path="mens"
             element={<Shopcategory banner={men_banner} category="men" />}
@@ -35,6 +38,8 @@ function App() {
           </Route>
 
           <Route path="Login" element={<Login />} />
+
+          <Route path="Sign-up" element={<Signup/>} />
           <Route path="Cart" element={<Cart />} />
          
         </Routes>
